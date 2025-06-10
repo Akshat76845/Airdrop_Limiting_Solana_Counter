@@ -1,0 +1,16 @@
+[package]
+name = "user_profile"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+solana-program = "1.18.2"
+borsh = "0.9"
+borsh-derive = "0.9"
+[features]
+default = []
+custom-heap = []
+custom-panic = []
